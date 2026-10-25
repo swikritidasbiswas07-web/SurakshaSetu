@@ -1,0 +1,1087 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#252a27;background:#f7f5ef;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;--paper:#f7f5ef;--green:#234e45;--green-dark:#183b34;--ochre:#d5a15d;--brick:#a64438;--ink:#252a27;--muted:#656b66;--line:#d8d8cf;--white:#fffefa}
+*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #bd7d29;outline-offset:3px}.app{min-height:100vh;display:flex;flex-direction:column}.topbar{background:var(--green);color:#fff;display:flex;align-items:center;gap:2rem;padding:1rem clamp(1rem,4vw,4rem);border-bottom:4px solid var(--ochre)}.wordmark{background:none;border:0;color:#fff;font-weight:750;font-size:1.2rem;letter-spacing:-.03em;padding:0;white-space:nowrap}.topbar nav{display:flex;align-items:center;gap:.35rem;flex:1;flex-wrap:wrap}.topbar nav button,.footer-links button{background:none;border:0;color:inherit;padding:.6rem .7rem;text-align:left}.topbar nav button:hover,.footer-links button:hover{text-decoration:underline;text-underline-offset:4px}.language{display:flex;gap:.5rem;align-items:center;font-size:.85rem}.language select{max-width:130px}.topbar select{background:#fffefa;color:var(--ink);border:1px solid var(--line);padding:.45rem;border-radius:2px}main{width:min(1120px,100%);margin:0 auto;padding:clamp(1.2rem,4vw,3rem);flex:1}.intro{padding:clamp(2rem,6vw,5rem) 0 3.5rem;max-width:800px}.kicker{color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 1rem}.intro h1,.auth-panel h1,.page-section h1,.legal h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.035em;line-height:1.08;font-size:clamp(2.3rem,5vw,4.4rem);margin:0 0 1.2rem;max-width:850px}.lead{font-size:1.2rem;line-height:1.7;color:#4f5751;max-width:690px}.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}.primary,.secondary{border:1px solid var(--green);padding:.85rem 1.15rem;font-weight:700;border-radius:3px;min-height:46px}.primary{background:var(--green);color:white}.primary:hover{background:var(--green-dark)}.secondary{background:transparent;color:var(--green)}.secondary:hover{background:#e9eee9}.primary:disabled,.secondary:disabled{opacity:.6;cursor:wait}.home-columns{display:grid;grid-template-columns:1.2fr 1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:1rem 0 2rem}.home-columns article{padding:1.5rem 1.2rem 1.5rem 0;border-right:1px solid var(--line);margin-right:1.2rem}.home-columns article:last-child{border:0;margin:0}.home-columns h2,.result h2,.ocr h2,.saved h2,.legal h2{font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;font-weight:500;margin:.25rem 0 .7rem}.home-columns p{line-height:1.65;color:#555e57}.text-button{background:none;border:0;padding:.3rem 0;color:var(--green);font-weight:750;text-decoration:underline;text-underline-offset:4px;text-align:left}.notice,.warning,.offline-banner,.error{padding:1rem;border-left:4px solid var(--ochre);background:#f0e8d9;line-height:1.6}.warning{border-color:var(--brick);background:#f4e6e2}.offline-banner{margin:0;padding:.65rem 1.5rem}.error{border-color:var(--brick);background:#f8e8e5;margin-bottom:1.2rem}.auth-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:start;padding:2rem 0 3rem;border-bottom:1px solid var(--line);margin-bottom:2rem}.auth-panel>div p:not(.kicker){color:var(--muted);line-height:1.65}.auth-form{background:var(--white);padding:1.4rem;border:1px solid var(--line);border-top:4px solid var(--green)}.tabs{display:flex;gap:1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}.tabs button{border:0;background:none;padding:.65rem 0;color:var(--muted)}.tabs button.selected{color:var(--green);font-weight:800;border-bottom:3px solid var(--green)}.field{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1rem;min-width:0}.field span{font-size:.92rem;font-weight:650;line-height:1.4}.field input,.field select,.field textarea,.auth-form input,select,input,textarea{border:1px solid #b9bdb6;background:#fffefa;color:var(--ink);border-radius:2px;padding:.75rem;min-width:0;width:100%}.field textarea{resize:vertical}.small{font-size:.82rem;color:var(--muted);line-height:1.55}.page-section{max-width:900px}.page-section>h1,.legal>h1{font-size:clamp(2.1rem,4vw,3.4rem)}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.2rem;margin:2rem 0}.wide{grid-column:1/-1}.result{background:#fffefa;border:1px solid var(--line);border-top:4px solid var(--green);padding:1.4rem;margin:2rem 0;overflow-wrap:anywhere}.result h3{margin:1.4rem 0 .5rem}.result li{line-height:1.6;margin:.6rem 0}.level{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--brick);border-bottom:1px solid currentColor;margin-left:.3rem}.level.info{color:var(--green)}.level.medium{color:#885d1c}.ocr{border-top:1px solid var(--line);padding-top:1.4rem;margin-top:2.5rem}.ocr form{display:flex;align-items:end;gap:1rem;flex-wrap:wrap}.ocr form .field{flex:1;min-width:230px}.resource-list{list-style:disc;padding-left:1.3rem}.resource-list li{padding:1rem 0;border-bottom:1px solid var(--line)}.resource-list h2{font-family:Georgia,serif;font-weight:500;font-size:1.35rem;margin:0 0 .4rem}.resource-list p{line-height:1.6}.resource-list a{color:var(--green);overflow-wrap:anywhere}.legal{max-width:780px}.legal>p{font-size:1.05rem;line-height:1.8}.legal h2{margin-top:2rem}.saved{border-top:1px solid var(--line);padding-top:1rem}.saved li{margin:.8rem 0}footer{background:#e9e7df;border-top:1px solid var(--line);padding:2rem clamp(1rem,4vw,4rem);color:var(--ink)}.footer-name{font-family:Georgia,serif;font-size:1.4rem;color:var(--green)}footer>p{line-height:1.6}.footer-links{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}.footer-links button{color:var(--green);padding-left:0}.footer-links button:not(:last-child)::after{content:"";display:inline-block;border-right:1px solid var(--line);height:1em;margin-left:1rem;vertical-align:middle}@media(max-width:800px){.topbar{align-items:flex-start;flex-wrap:wrap;gap:1rem}.topbar nav{order:3;flex-basis:100%;overflow-x:auto;flex-wrap:nowrap}.topbar nav button{white-space:nowrap;padding:.45rem .5rem}.language{margin-left:auto}.auth-panel{grid-template-columns:1fr;gap:1rem}.home-columns{grid-template-columns:1fr}.home-columns article{border-right:0;border-bottom:1px solid var(--line);margin:0;padding:1.2rem 0}.home-columns article:last-child{border-bottom:0}.intro{padding-top:2.5rem}}@media(max-width:520px){main{padding:1.1rem}.form-grid{grid-template-columns:1fr}.wide{grid-column:auto}.intro h1{font-size:2.6rem}.lead{font-size:1.05rem}.ocr form{display:block}.ocr form .secondary{width:100%}.auth-form{padding:1rem}.language span{display:none}}
+
+/* Evidence-backed report and category chart */
+.research-action{margin:1.5rem 0;padding:1.2rem;background:#eeece3;border-left:4px solid var(--green)}
+.research-report{margin:1.5rem 0 2rem;padding:clamp(1rem,3vw,2rem);background:var(--white);border:1px solid var(--line);border-top:4px solid var(--green);overflow-wrap:anywhere}
+.research-report h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:500;margin:.2rem 0 1rem}
+.research-report h3{margin:1.6rem 0 .6rem}
+.research-grid{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.4fr);gap:2rem;align-items:start;margin:1.5rem 0}
+.donut-wrap{display:flex;flex-direction:column;align-items:center;gap:.8rem}
+.risk-donut{width:min(100%,260px);aspect-ratio:1;position:relative;display:grid;place-items:center}
+.risk-donut svg{width:100%;height:100%;overflow:visible}
+.donut-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;pointer-events:none}
+.donut-center strong{font-size:2rem;color:var(--green)}
+.donut-center span{font-size:.78rem;color:var(--muted)}
+.category-list article{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.category-heading{display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.category-heading span{font-variant-numeric:tabular-nums;font-weight:750;color:var(--green)}
+.score-track{height:7px;background:#e8e2d6;border-radius:99px;overflow:hidden;margin:.55rem 0}
+.score-track span{display:block;height:100%;background:var(--green);border-radius:99px}
+.category-list p,.source-list p{line-height:1.55;margin:.45rem 0;color:#4f5751}
+.source-list{padding-left:1.3rem}
+.source-list li{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.source-list a{color:var(--green);overflow-wrap:anywhere}
+.research-report li{line-height:1.65;margin:.5rem 0}
+@media(max-width:700px){.research-grid{grid-template-columns:1fr}.donut-wrap{max-width:280px;margin:0 auto}}
+
+
+
+/* =========================================
+   SURAKSHASETU — RESTORED PHOTO SLIDESHOW
+   Preserves the evidence-report upgrade
+   ========================================= */
+
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #f7f5ef;
+}
+
+/* Keep photos behind the homepage content */
+.home-hero .hero-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home-hero .hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: surakshaFade 42s infinite;
+  will-change: opacity;
+}
+
+/* Six existing photos */
+.home-hero .hero-slide:nth-child(1) {
+  background-image: url("/images/village-morning.jpg");
+  animation-delay: 0s;
+}
+
+.home-hero .hero-slide:nth-child(2) {
+  background-image: url("/images/railway-journey.jpg");
+  animation-delay: 7s;
+}
+
+.home-hero .hero-slide:nth-child(3) {
+  background-image: url("/images/employment-papers.jpg");
+  animation-delay: 14s;
+}
+
+.home-hero .hero-slide:nth-child(4) {
+  background-image: url("/images/workplace.jpg");
+  animation-delay: 21s;
+}
+
+.home-hero .hero-slide:nth-child(5) {
+  background-image: url("/images/city-safety.jpg");
+  animation-delay: 28s;
+}
+
+.home-hero .hero-slide:nth-child(6) {
+  background-image: url("/images/community-support.jpg");
+  animation-delay: 35s;
+}
+
+/* Soft cream overlay for readable text */
+.home-hero .hero-slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 239, 0.94) 0%,
+    rgba(247, 245, 239, 0.82) 45%,
+    rgba(247, 245, 239, 0.40) 100%
+  );
+}
+
+/* Keep homepage content above the photos */
+.home-hero > .intro,
+.home-hero > .home-columns,
+.home-hero > .saved,
+.home-hero > .notice {
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth crossfade */
+@keyframes surakshaFade {
+  0%, 4% {
+    opacity: 0;
+  }
+
+  10%, 23% {
+    opacity: 1;
+  }
+
+  29%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Sign-in page slideshow */
+.auth-hero {
+  min-height: min(76vh, 760px);
+  display: flex;
+  align-items: center;
+  padding: clamp(1rem, 4vw, 3.5rem);
+  border-radius: 0;
+}
+
+.auth-hero .hero-slideshow::after {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 239, 0.91) 0%,
+    rgba(247, 245, 239, 0.78) 48%,
+    rgba(247, 245, 239, 0.42) 100%
+  );
+}
+
+.auth-hero .auth-panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1050px);
+  margin: 0 auto;
+  background: rgba(247, 245, 239, 0.92);
+  border: 1px solid rgba(35, 69, 56, 0.16);
+  box-shadow: 0 18px 55px rgba(35, 48, 39, 0.12);
+  backdrop-filter: blur(3px);
+}
+
+/* Accessibility: respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .home-hero .hero-slide {
+    animation: none;
+  }
+
+  .home-hero .hero-slide:first-child {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .auth-hero {
+    min-height: auto;
+    padding: 1rem 0;
+  }
+
+  .auth-hero .auth-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Full-width slideshow bleed — preserve text layout */
+
+.home-hero {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Let the photographs fill the wider canvas */
+.home-hero .hero-slide {
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Keep the existing text and cards above the images */
+.home-hero > .intro,
+.home-hero > .home-columns,
+.home-hero > .saved,
+.home-hero > .notice {
+  position: relative;
+  z-index: 1;
+}
+/* ==========================================
+   SURAKSHASETU — FULL-BLEED HERO SLIDESHOW
+   Expand background, preserve foreground layout
+   ========================================== */
+
+/* Let the homepage hero extend beyond its
+   centered parent container */
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+}
+
+/* Extend the slideshow to both viewport edges */
+.home-hero .hero-slideshow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  max-width: none;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Make every image fill the wider background */
+.home-hero .hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Preserve readable text over the photos */
+.home-hero .hero-slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 239, 0.94) 0%,
+    rgba(247, 245, 239, 0.82) 38%,
+    rgba(247, 245, 239, 0.48) 72%,
+    rgba(247, 245, 239, 0.28) 100%
+  );
+  pointer-events: none;
+}
+
+/* Keep the existing content above the background */
+.home-hero > :not(.hero-slideshow) {
+  position: relative;
+}
+
+/* Prevent the wider background from creating
+   horizontal page scrolling */
+html,
+body,
+#root {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: clip;
+}
+
+/* On smaller screens, retain the same full-bleed
+   background without changing the content layout */
+@media (max-width: 700px) {
+  .home-hero .hero-slideshow {
+    width: 100vw;
+  }
+
+  .home-hero .hero-slide {
+    background-position: center center;
+  }
+}
+
+/* Darker, clearer dividers on the homepage feature cards */
+.home-hero .home-columns {
+  border-top: 1.5px solid rgba(35, 45, 39, 0.65);
+  border-bottom: 1.5px solid rgba(35, 45, 39, 0.65);
+}
+
+.home-hero .home-columns > * {
+  border-right: 1.5px solid rgba(35, 45, 39, 0.65);
+}
+
+.home-hero .home-columns > *:last-child {
+  border-right: none;
+}
+
+/* Darken other subtle separators within the homepage */
+.home-hero .saved {
+  border-top: 1.5px solid rgba(35, 45, 39, 0.55);
+}
+
+/* ==========================================
+   SURAKSHASETU — SPACIOUS SIGN-IN HOMEPAGE
+   Preserve all existing text and functionality
+   ========================================== */
+
+.auth-hero {
+  width: 100%;
+  max-width: none;
+  min-height: 88vh;
+  box-sizing: border-box;
+  padding: clamp(2rem, 5vw, 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Expand the outer hero container */
+.auth-hero .auth-panel {
+  width: min(100%, 1380px);
+  max-width: 1380px;
+  min-height: 600px;
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding: clamp(2rem, 4vw, 4rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(400px, 0.9fr);
+  align-items: center;
+  gap: clamp(2.5rem, 5vw, 5rem);
+}
+
+/* Give the left-side introduction room to breathe */
+.auth-hero .auth-panel > :first-child {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Keep the sign-in form comfortably sized */
+.auth-hero .auth-panel form,
+.auth-hero .auth-panel > :last-child {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Avoid cramped fields */
+.auth-hero .auth-panel input,
+.auth-hero .auth-panel select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-height: 56px;
+}
+
+/* Tablet and mobile */
+@media (max-width: 900px) {
+  .auth-hero {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .auth-hero .auth-panel {
+    min-height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    padding: clamp(1.5rem, 5vw, 3rem);
+  }
+}
+
+/* ==========================================
+   CENTRE THE ENTIRE OFFER REVIEW PAGE
+   ========================================== */
+
+.page-offer,
+.offer-page,
+.offer-review,
+main:has(.offer-form) {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Centre the section heading */
+.page-offer h1,
+.offer-page h1,
+.offer-review h1,
+main:has(.offer-form) h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep the form centred and evenly spaced */
+.page-offer form,
+.offer-page form,
+.offer-review form,
+main:has(.offer-form) form {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Preserve the existing two-column field layout */
+.page-offer form,
+.offer-page form,
+.offer-review form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 20px;
+}
+
+/* Keep fields within their columns */
+.page-offer input,
+.page-offer select,
+.offer-page input,
+.offer-page select,
+.offer-review input,
+.offer-review select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep the submit button aligned to the form */
+.page-offer button,
+.offer-page button,
+.offer-review button {
+  justify-self: start;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .page-offer form,
+  .offer-page form,
+  .offer-review form {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Shift the offer review section slightly right */
+main:has(.offer-form) {
+  transform: translateX(24px);
+}
+
+@media (max-width: 700px) {
+  main:has(.offer-form) {
+    transform: none;
+  }
+}
+
+/* Shift offer-review content only; leave the background slideshow fixed */
+main:has(.offer-form) {
+  transform: translateX(60px);
+}
+
+@media (max-width: 700px) {
+  main:has(.offer-form) {
+    transform: none;
+  }
+}
+
+/* Make the slideshow images more visible */
+.hero-slideshow::after {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 239, 0.55) 0%,
+    rgba(247, 245, 239, 0.40) 48%,
+    rgba(247, 245, 239, 0.20) 100%
+  ) !important;
+}
+
+/* Increase the fade over the slideshow images */
+.hero-slideshow::after {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 245, 239, 0.78) 0%,
+    rgba(247, 245, 239, 0.78) 48%,
+    rgba(247, 245, 239, 0.60) 100%
+  ) !important;
+}
+
+/* Centre the offer-review content horizontally */
+main:has(.offer-form) {
+  transform: translateX(100px);
+}
+
+@media (max-width: 700px) {
+  main:has(.offer-form) {
+    transform: none;
+  }
+}
+
+/* Shift the offer review page content to the right */
+main {
+  padding-left: 80px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+main {
+  padding-left: 110px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+
+
+/* Donut chart refinement: balanced sizing and readable report layout */
+.research-grid {
+  grid-template-columns: minmax(240px, .85fr) minmax(0, 1.35fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+.donut-wrap {
+  width: 100%;
+  min-width: 0;
+  padding: 1rem 0;
+}
+.risk-donut {
+  width: min(100%, 300px);
+  flex: 0 0 auto;
+}
+.risk-donut svg {
+  display: block;
+}
+.category-list article:first-child {
+  padding-top: 0;
+}
+.source-list a {
+  text-underline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .research-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .donut-wrap {
+    max-width: 320px;
+    margin-inline: auto;
+  }
+}
+
+/* FIX: Hero image should bleed to the viewport edges */
+.hero,
+.home-hero,
+.hero-section,
+.homepage-hero {
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  box-sizing: border-box;
+}
+
+/* Remove parent/container side padding that creates the left gap */
+.home-page,
+.homepage,
+.home-container,
+.page-home {
+  overflow-x: clip;
+}
+
+/* Keep the hero content aligned and readable */
+.hero > *,
+.home-hero > *,
+.hero-section > *,
+.homepage-hero > * {
+  box-sizing: border-box;
+}
+
+/* Ensure the background image fills the hero instead of leaving gaps */
+.hero,
+.home-hero,
+.hero-section,
+.homepage-hero {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* SURAKSHASETU FIX: restore viewport alignment */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* The hero sits inside main, which has its own padding.
+   Extend the background section to the viewport edges. */
+main > .home-hero {
+  width: calc(100% + clamp(2.4rem, 8vw, 6rem));
+  max-width: none;
+  margin-left: calc(0px - clamp(1.2rem, 4vw, 3rem));
+  box-sizing: border-box;
+}
+
+/* Keep the sign-in hero within the screen */
+main > .auth-hero {
+  width: calc(100% + clamp(2.4rem, 8vw, 6rem));
+  max-width: none;
+  margin-left: calc(0px - clamp(1.2rem, 4vw, 3rem));
+  padding: clamp(1.2rem, 4vw, 3rem);
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent oversized text and panels from forcing horizontal overflow */
+.home-hero .intro,
+.home-hero .home-columns,
+.auth-hero .auth-panel {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.home-hero .intro h1 {
+  overflow-wrap: break-word;
+}
+
+.auth-hero .auth-panel {
+  width: 100%;
+}
+
+/* Narrow-screen layout */
+@media (max-width: 700px) {
+  main {
+    padding: 1rem;
+    min-width: 0;
+  }
+
+  main > .home-hero,
+  main > .auth-hero {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+  }
+
+  .auth-hero .auth-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .auth-hero .auth-form {
+    min-width: 0;
+  }
+
+  .home-hero .intro h1 {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+  }
+}
+
+/* ===== FINAL LAYOUT RESET — SurakshaSetu ===== */
+
+/* Undo previous experimental shifts */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+}
+
+main {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 3rem) !important;
+  box-sizing: border-box;
+  transform: none !important;
+  min-width: 0;
+}
+
+/* Keep the content at a normal readable width */
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+/* Only the slideshow bleeds to the viewport edges */
+.home-hero .hero-slideshow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Preserve image cropping without stretching the content */
+.home-hero .hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Don't let headings or cards force the page wider */
+.home-hero > *,
+.home-hero .intro,
+.home-hero .home-columns,
+.home-hero .saved {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.home-hero .intro h1 {
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.home-hero .home-columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 1.25rem !important;
+  }
+
+  .home-hero .home-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-hero .intro h1 {
+    font-size: clamp(2.3rem, 8vw, 3.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem !important;
+  }
+
+  .home-hero .intro {
+    padding-top: 2rem;
+  }
+
+  .home-hero .intro h1 {
+    font-size: clamp(2.1rem, 10vw, 2.8rem);
+  }
+
+  .home-hero .actions button {
+    max-width: 100%;
+  }
+}
+
+/* Emergency reset: stop horizontal shifting and cropping */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+main {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 38px 48px !important;
+  box-sizing: border-box !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+.home-hero {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+
+.home-hero .intro {
+  width: 100% !important;
+  max-width: 1120px;
+  margin-inline: auto !important;
+  box-sizing: border-box;
+}
+
+.home-hero .home-columns {
+  width: 100% !important;
+  max-width: 1120px;
+  margin-inline: auto !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 24px 20px !important;
+  }
+}
+
+
+/* ===== SURAKSHASETU: COMPACT SPACING ===== */
+
+/* Reduce excessive page padding */
+main {
+  padding: 24px 32px !important;
+}
+
+/* Keep the hero content in a narrower, cohesive column */
+.home-hero .intro {
+  max-width: 960px !important;
+  margin-inline: auto !important;
+}
+
+/* Bring the eyebrow, heading and description closer */
+.home-hero .intro > * {
+  margin-top: 0;
+}
+
+.home-hero .intro h1 {
+  margin-top: 14px !important;
+  margin-bottom: 18px !important;
+  line-height: 1.05 !important;
+  max-width: 900px;
+}
+
+.home-hero .intro p {
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+  line-height: 1.6 !important;
+  max-width: 850px;
+}
+
+/* Reduce the gap between hero buttons */
+.home-hero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px !important;
+  margin-top: 18px !important;
+}
+
+/* Bring the feature cards closer to the hero content */
+.home-hero .home-columns {
+  margin-top: 48px !important;
+  gap: 0 !important;
+}
+
+/* Compact feature-card content */
+.home-hero .home-columns > * {
+  padding: 20px 22px !important;
+  min-width: 0;
+}
+
+.home-hero .home-columns h2,
+.home-hero .home-columns h3 {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  line-height: 1.2 !important;
+}
+
+.home-hero .home-columns p {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  line-height: 1.55 !important;
+}
+
+/* Keep sections below the hero from being too far apart */
+main section {
+  margin-bottom: 28px;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 18px 16px !important;
+  }
+
+  .home-hero .intro h1 {
+    font-size: clamp(2.2rem, 8vw, 3.2rem) !important;
+  }
+
+  .home-hero .home-columns {
+    margin-top: 30px !important;
+  }
+
+  .home-hero .home-columns > * {
+    padding: 16px !important;
+  }
+}
+
+/* ===== COMPACT SAVED ASSESSMENTS + DISCLAIMER ===== */
+
+/* Reduce spacing around the saved assessments section */
+.home-hero .saved {
+  margin-top: 20px !important;
+  padding-top: 16px !important;
+  padding-bottom: 12px !important;
+}
+
+/* Tighten the heading and empty-state message */
+.home-hero .saved h2,
+.home-hero .saved h3 {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  line-height: 1.25 !important;
+}
+
+.home-hero .saved p {
+  margin-top: 8px !important;
+  margin-bottom: 12px !important;
+  line-height: 1.5 !important;
+}
+
+/* Keep the disclaimer compact */
+.home-hero .notice,
+.home-hero .disclaimer,
+.home-hero .safety-notice {
+  margin-top: 14px !important;
+  margin-bottom: 0 !important;
+  padding: 14px 18px !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box;
+}
+
+/* Prevent the slideshow from extending behind the page footer */
+.home-hero {
+  padding-bottom: 0 !important;
+}
+
+/* Mobile spacing */
+@media (max-width: 700px) {
+  .home-hero .saved {
+    margin-top: 14px !important;
+    padding-top: 12px !important;
+  }
+
+  .home-hero .notice,
+  .home-hero .disclaimer,
+  .home-hero .safety-notice {
+    padding: 12px 14px !important;
+  }
+}
+
+/* ===== SURAKSHASETU: GLOBAL PAGE CENTRING ===== */
+
+/* Prevent viewport overflow */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Consistent centred layout across all pages */
+main {
+  width: 100% !important;
+  max-width: 1440px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 36px clamp(24px, 3.2vw, 48px) !important;
+  position: relative;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+/* Centre page sections consistently */
+main > section,
+main > .page-section,
+main > .content-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Centre page headings while keeping text left-aligned */
+main > section > h1,
+main > .page-section > h1,
+main > .content-section > h1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Centre forms and keep fields aligned */
+main form {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main form label,
+main form input,
+main form select,
+main form textarea {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Preserve a balanced two-column form layout */
+main form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  row-gap: 18px;
+}
+
+/* Buttons should not stretch across the whole form */
+main form button {
+  justify-self: start;
+  max-width: 100%;
+}
+
+/* Keep the homepage hero and feature sections centred */
+.home-hero,
+.home-hero .intro,
+.home-hero .home-columns,
+.home-hero .saved {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Smaller screens */
+@media (max-width: 760px) {
+  main {
+    padding: 24px 20px !important;
+  }
+
+  main form {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  main {
+    padding: 18px 14px !important;
+  }
+}

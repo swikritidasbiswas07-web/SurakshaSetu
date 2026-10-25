@@ -1,0 +1,9 @@
+{
+  "name": "SurakshaSetu",
+  "short_name": "SurakshaSetu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f1e8",
+  "theme_color": "#234e45",
+  "description": "A multilingual job-offer review and employment-conditions checklist."
+}
