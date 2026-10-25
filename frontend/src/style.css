@@ -1085,3 +1085,243 @@ main form button {
     padding: 18px 14px !important;
   }
 }
+/* ===== SurakshaSetu: Sign-in page layout fix ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Prevent the main page from stretching awkwardly */
+main,
+.app,
+.auth-page,
+.auth-layout,
+.login-page,
+.workspace-page {
+  max-width: 100%;
+}
+
+/* Keep form controls inside their columns */
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+  min-width: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+/* Improve the sign-in panel */
+.auth-layout,
+.auth-page,
+.login-page {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.auth-layout form,
+.auth-page form,
+.login-page form {
+  width: 100%;
+}
+
+/* Avoid oversized headings on smaller screens */
+h1 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 900px) {
+  .auth-layout,
+  .auth-page,
+  .login-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .auth-layout > *,
+  .auth-page > *,
+  .login-page > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+  }
+}
+
+@media (max-width: 520px) {
+  .auth-layout,
+  .auth-page,
+  .login-page {
+    padding: 1rem;
+  }
+
+  button {
+    min-height: 48px;
+  }
+}
+/* ===== SURAKSHASETU FINAL AUTH LAYOUT OVERRIDE ===== */
+
+.auth-hero {
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.auth-hero .auth-panel {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 64px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 0.9fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+  box-sizing: border-box;
+}
+
+.auth-hero .auth-panel > * {
+  min-width: 0;
+}
+
+.auth-hero .auth-panel h1 {
+  font-size: clamp(44px, 5vw, 88px);
+  line-height: 1.08;
+  margin: 20px 0 24px;
+  overflow-wrap: break-word;
+}
+
+/* Keep the authentication card and controls contained */
+.auth-hero .auth-panel .auth-form {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.auth-hero .auth-form .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.auth-hero .auth-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.auth-hero .auth-form input,
+.auth-hero .auth-form select,
+.auth-hero .auth-form textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  box-sizing: border-box;
+}
+
+.auth-hero .auth-form button {
+  max-width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  box-sizing: border-box;
+}
+
+.auth-hero .auth-form > .primary {
+  justify-self: start;
+  width: auto;
+  min-width: 140px;
+  padding: 14px 24px;
+}
+
+.auth-hero .auth-form .small {
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .auth-hero {
+    padding: 24px;
+  }
+
+  .auth-hero .auth-panel {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+    padding: 28px;
+  }
+}
+
+/* Mobile: introduction above the form */
+@media (max-width: 720px) {
+  .auth-hero {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .auth-hero .auth-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 24px;
+  }
+
+  .auth-hero .auth-panel h1 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+
+  .auth-hero .auth-form .tabs {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-hero {
+    padding: 10px;
+  }
+
+  .auth-hero .auth-panel {
+    padding: 18px;
+  }
+
+  .auth-hero .auth-form > .primary {
+    width: 100%;
+  }
+}
